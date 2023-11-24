@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .card{
+            background-color: #eee;
+        }
+       .chan{
+        border-radius: 4px;
+       }
+       .pp{
+        margin-top: 10px;
+        color: rebeccapurple;
+        font-size: 25px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card p-3 mt-2 mb-3">
+        <p class="pp">Register Yourself :</p>
+        <hr class="">
+
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+
+         <div class="form-floating mb-3 ">
+            <input class="form-control" type="text" placeholder="Enter your name" name="name"  required>
+            <label for="name">Student's Name :</label>
+        
+          </div>
+
+           <div class="form-floating mb-3 ">
+             <input class="form-control" type="number" placeholder="Enter your register number" name="rnum"  required>
+             <label for="register">Register Number :</label>
+            </div>
+
+           <div class="form-floating mb-3 ">
+             <input class="form-control" type="date" name="dob"  >
+             <label for="dob">Date of Birth : </label>
+           </div> 
+
+           <div class="row">
+            <div class="col-6">
+            <div class="form-floating mb-3 ">
+             <input class="form-control" type="text" placeholder="Enter your father's name" name="fname"  required>
+             <label for="father">Father's Name : </label>
+            </div>
+           </div>
+           <div class="col-6">
+           <div class="form-floating mb-3 ">
+            <input class="form-control" type="number" placeholder="Enter your father's name" name="fnum"  required>
+            <label for="father">Father's Mobile Number : </label>
+          </div>
+          </div>
+          </div>
+
+           <div class="form-floating mb-3 ">
+             <input class="form-control" type="text" placeholder="Enter your mother's name" name="mname" required >
+             <label for="mother">Mother's Name : </label>
+           </div>
+           
+           <div class="form-floating mb-3 ">
+             <input class="form-control" type="email" placeholder="Enter your Email" name="email"  required>
+             <label for="email">Email :</label>
+           </div>
+
+           <div class="form-floating mb-3 ">
+             <input class="form-control" type="number" placeholder="Enter your mobile number" name="mobile" required  >
+             <label for="mobile">Mobile Number :</label>
+           </div>
+
+           <div class="form-floating mb-3 ">
+            <input class="form-control" type="number" placeholder="Enter your aadhar number" name="aadhar"  required>
+            <label for="mobile">Aadhar Number :</label>
+           </div>
+           
+            <select name="gender" class="form-select mb-3 p-3">
+              <option >Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="None">Not prefer to say</option>
+            </select>
+         
+           <div class="form-floating mb-3 ">
+            <input class="form-control" type="text" placeholder="Enter your Caste" name="religion"  required>
+            <label for="gender">Religion :</label>
+          </div>
+
+           <div class="form-floating mb-3 ">
+            <input class="form-control" type="text" placeholder="Enter your Community" name="community"  required>
+            <label for="gender">Community :</label>
+          </div>
+
+          <div class="form-floating mb-3 " title="If not type NIL">
+            <input class="form-control" type="text" placeholder="Enter your Caste" name="caste"  required>
+            <label for="gender">Caste :</label>
+          </div>
+
+          <div class="form-floating mb-3 " title="If not type NIL">
+            <textarea class="form-control" type="text" placeholder="Enter your Caste" name="address"  required></textarea>
+            <label for="gender">Address:</label>
+          </div>
+
+          <div class="form-floating mb-3 " title="If not type NIL">
+            <input class="form-control" type="text" placeholder="Enter your Caste" name="income"  required>
+            <label for="gender">Annual Income :</label>
+          </div>
+         
+           <div class="form-floating mb-3 ">
+           <input type="submit" name="login" class="btn btn-success">
+          </div>
+          
+        </form>
+    </div>
+</div>
+</body>
+</html>
